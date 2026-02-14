@@ -1,0 +1,23 @@
+{
+  "name": "them-project",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amiraeone/them-test-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amiraeone/them-test-project/issues"
+  },
+  "homepage": "https://github.com/Amiraeone/them-test-project#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^4.1.18"
+  }
+}
