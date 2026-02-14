@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-/* @layer components {
-  .text {
-    @apply bg-primary text-white px-4 py-2 rounded-lg;
-  }
+/* .btn { 
+  @apply px-4 py-2 bg-blue-500 text-white rounded; 
 } */
