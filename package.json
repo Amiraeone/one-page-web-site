@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/css/output.css"
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/css/output.css --watch"
   }
 }
