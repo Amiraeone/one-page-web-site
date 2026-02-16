@@ -3,24 +3,24 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1920, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./dist/css/output.css" rel="stylesheet" />
     <script src="main.js" defer></script>
     <title>web site</title>
 </head>
 
 <body
-      class="relative h-screen w-screen overflow-x-hidden! bg-gray-200 dark:bg-black">
+      class="relative h-screen w-screen overflow-x-hidden! -z-50 bg-gray-200 dark:bg-black">
     <header
-            class="absolute top-0 left-0 z-10 flex w-full items-center justify-between px-20 py-4">
+            class="absolute top-0 left-0 z-10 flex w-full items-center justify-between px-8 py-4 lg:px-20">
         <div>
-            <h1 class="text-2xl font-bold text-black dark:text-white">
+            <h1 class="text-xl font-bold text-black lg:text-2xl dark:text-white">
                 website logo
             </h1>
         </div>
         <div class="flex items-center justify-between gap-6">
             <nav class="p-4">
-                <ul class="flex w-full items-center justify-between gap-8">
+                <ul class="hidden w-full items-center justify-between gap-8 lg:flex">
                     <li>
                         <a
                            href="#home"
@@ -40,7 +40,7 @@
             </nav>
             <div class="flex items-center gap-4">
                 <button
-                        class="border-gray cursor-pointer rounded-full border bg-transparent px-8 py-2 text-black duration-300 hover:bg-gray-400 hover:text-white active:scale-75 dark:border-gray-300 dark:text-white dark:hover:bg-gray-300 dark:hover:text-black">
+                        class="max-lg:hidden border-gray cursor-pointer rounded-full border bg-transparent px-8 py-2 text-black duration-300 hover:bg-gray-400 hover:text-white active:scale-75 dark:border-gray-300 dark:text-white dark:hover:bg-gray-300 dark:hover:text-black">
                     Sign Up
                 </button>
                 <label
@@ -67,22 +67,59 @@
                     </svg>
                 </label>
             </div>
+            <div class="lg:hidden dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost bg-transparent hover:border-0! border-0! hover:shadow-none btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             class="inline-block stroke-current not-dark:text-black dark:text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </div>
+                </div>
+                <ul
+                    tabindex="-1"
+                    class="menu menu-sm not-dark:bg-gray-300 dropdown-content bg-neutral-800 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li>
+                        <a
+                           href="#home"
+                           class="text-lg text-black dark:text-white not-dark:active:bg-gray-400! not-dark:hover:bg-gray-400/50">Home</a>
+                    </li>
+                    <li>
+                        <a
+                           href="#Sign Up"
+                           class="text-lg text-black justify-between not-dark:active:bg-gray-400! not-dark:hover:bg-gray-400/50 dark:text-white">Sign Up</a>
+                    </li>
+                    <li>
+                        <a
+                           href="#articls"
+                           class="text-lg text-black justify-between not-dark:active:bg-gray-400! not-dark:hover:bg-gray-400/50 dark:text-white">Articls <span class="badge not-dark:bg-gray-500 not-dark:border-0">New</span></a>
+                    </li>
+                    <li>
+                        <a
+                           href="#about_me"
+                           class="text-lg text-black dark:text-white not-dark:active:bg-gray-400! not-dark:hover:bg-gray-400/50">About me</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <section
              class="flex h-full w-full items-center justify-between gap-4 bg-transparent">
         <div
-             class="flex h-full w-2/4 flex-col items-start justify-end gap-5 px-20 py-10">
+             class="relative flex h-full w-full flex-col items-center justify-center gap-5 px-10 py-5 lg:w-2/4 lg:items-start lg:justify-end lg:px-20 lg:py-10">
             <div>
-                <h1 class="mb-2 text-4xl font-bold text-black dark:text-white">
+                <h1
+                    class="mb-2 text-2xl font-bold text-black lg:text-4xl dark:text-white">
                     welcome to website
                 </h1>
-                <p class="text-xl text-gray-600 dark:text-gray-300">
+                <p
+                   class="text-lg text-gray-600 max-lg:text-center lg:text-xl dark:text-gray-300">
                     creative website
                 </p>
             </div>
             <div>
-                <p class="text-justify text-black dark:text-white">
+                <p class="text-center text-black lg:text-justify dark:text-white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
                     repellendus maiores assumenda quae recusandae! Tempora, accusantium
                     quae. Incidunt esse beatae aliquam quam porro quaerat dolore
@@ -91,7 +128,7 @@
                     explicabo?
                 </p>
                 <div
-                     class="mt-2.5 flex items-center gap-2 *:block *:h-3.5 *:w-3.5 *:rounded-full *:bg-black *:dark:bg-white">
+                     class="mt-2.5 hidden items-center gap-2 *:block *:h-3.5 *:w-3.5 *:rounded-full *:bg-black lg:flex *:dark:bg-white">
                     <i></i><i></i><i></i><i></i>
                 </div>
             </div>
@@ -101,33 +138,33 @@
                     read more
                 </button>
             </div>
-            <footer>
-                <ul class="mt-8 flex w-full items-center justify-between gap-8">
+            <footer class="bottom-8 max-lg:fixed max-lg:px-8">
+                <ul class="flex w-full items-center justify-between gap-4 lg:gap-8 lg:mt-8">
                     <li>
                         <a
                            href="#Legal"
-                           class="text-lg font-bold text-black dark:text-white">Legal</a>
+                           class="text-base max-sm:text-sm font-bold text-black lg:text-lg dark:text-white">Legal</a>
                     </li>
                     <li>
                         <a
                            href="#Privacy center"
-                           class="text-lg fify-beld text-black dark:text-white">Privacy center</a>
+                           class="text-base max-sm:text-sm font-bold text-black lg:text-lg dark:text-white">Privacy center</a>
                     </li>
                     <li>
                         <a
                            href="#Cookies"
-                           class="text-lg font-bold text-black dark:text-white">Cookies</a>
+                           class="text-base max-sm:text-sm font-bold text-black lg:text-lg dark:text-white">Cookies</a>
                     </li>
                     <li>
                         <a
                            href="#About ads"
-                           class="text-lg font-bold text-black dark:text-white">About ads</a>
+                           class="text-base max-sm:text-sm font-bold text-black lg:text-lg dark:text-white">About ads</a>
                     </li>
                 </ul>
             </footer>
         </div>
-        <div class="flex h-full w-2/4 items-end justify-center">
-            <img src="./src/images/hero img.png" alt="hero img" />
+        <div class="max-lg:absolute h-auto w-auto bg-transparent overflow-hidden! -z-10 lg:h-full lg:w-2/4 lg:items-end lg:justify-center lg:flex">
+            <img src="./src/images/hero img.png" alt="hero img" class="max-lg:blur-sm dark:max-lg:brightness-75 max-lg:translate-x-1/2"/>
         </div>
     </section>
 </body>
