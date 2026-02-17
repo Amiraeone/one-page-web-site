@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -7,21 +8,15 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-300: oklch(87.9% 0.169 91.605);
-    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
-    --color-gray-700: oklch(37.3% 0.034 259.733);
-    --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-neutral-800: oklch(26.9% 0 0);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-xs: 0.75rem;
-    --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
@@ -35,12 +30,12 @@
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-bold: 700;
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --blur-sm: 8px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-main: "Poppins", sans-serif;
   }
 }
 @layer base {
@@ -1132,6 +1127,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .font-main {
+    font-family: var(--font-main);
   }
   .text-2xl {
     font-size: var(--text-2xl);
